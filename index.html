@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="Google Sheet.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form
+        method="post"
+        action="https://script.google.com/macros/s/AKfycby3VWr_eVnxuO_BAh11hsQpwVHD2hkB3S5sFmFgkq2sDUZmMpOzYmavlkd4poQnI1ZQ/exec"
+        name="contact-form"
+      >
+        <h4>Thông tin khách hàng</h4>
+        <input type="text" name="Tên" placeholder="Tên" required />
+        <input type="text" name="Thành phố" placeholder="Thành phố" required />
+        <select name="Giới tính" required>
+          <option value="">Giới tính</option>
+          <option value="Nam">Nam</option>
+          <option value="Nữ">Nữ</option>
+          <option value="Khác">Khác</option>
+        </select>
+        <input type="number" name="Tuổi" placeholder="Tuổi" required />
+        <input
+          type="tel"
+          name="Số điện thoại"
+          placeholder="Số điện thoại di động"
+          required
+        />
+        <input type="submit" value="Hoàn thành" id="submit" />
+      </form>
+    </div>
+
+    <script src="Google Sheet.js"></script>
+  </body>
+</html>
